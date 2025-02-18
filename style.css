@@ -446,7 +446,7 @@ li  a:hover{
 @media(max-width:768px){
 
 	.carousel-caption.d-md-block.new10 h2 {
-		font-size:25px;
+		font-size:35px;
 		letter-spacing: 0.2px
 	}
 	.video-card{
@@ -458,6 +458,11 @@ li  a:hover{
 		font-weight: bold;
 		transition: 0.3s;
 		font-size: 10px;
+	}
+	.carousel-inner .carousel-item img{
+		background-position: end;
+		height: 400px; 
+		object-fit: cover; 
 	}
 
 }
