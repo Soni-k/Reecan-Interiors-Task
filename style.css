@@ -1,0 +1,463 @@
+* {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.navbar {
+	background-color: black;
+	padding: 27px 20px;
+}
+.navbar-brand {
+	color: white;
+	font-weight: bold;
+}
+.navbar-brand img {
+	width: 200px;
+	height: auto; 
+}
+ul .nav-item a{
+	font-size: 22px;
+}
+li  a:hover{
+  border-bottom:2px solid  rgb(242, 240, 240);
+  transition: 0.3s linear;
+  width:100%;
+}
+.navbar-nav .nav-link {
+	color: white !important;
+	font-weight: 500;
+	margin: 0 10px;
+}
+.navbar-toggler {
+	font-size: 20px;
+}
+.navbar-toggler-icon {
+	color: white;
+}
+
+
+/* carousel */
+.carousel-inner .carousel-item img{
+	height: 100vh;
+	background-position: end;
+}
+.carousel-caption.d-md-block.new10 {
+	margin-bottom: 25%;
+	left: 10% !important;
+	top: 45%
+}
+.carousel-caption.d-md-block.new10 h2 {
+	font-size:50px;
+	letter-spacing: 1.2px
+}
+
+/* about */
+.container {
+	margin-top: 50px;
+}
+.image-container img {
+	width: 100%;
+	border-radius: 10px;
+}
+.content h1 {
+	font-weight: bold;
+}
+.content h5 {
+	font-weight: 600;
+	color: #333;
+}
+
+.image-container:hover .img-change {
+	content: url('image/gallery5.jpg'); /* Change to new image */
+	z-index: 999;
+}
+
+
+/* project  */
+.projects-container {
+	margin: 53px auto;
+	text-align: center;
+}
+.projects-container h1 {
+	font-weight: bold;
+	margin-bottom: 35px;
+}
+.project-card {
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	transition: transform 0.3s ease-in-out;
+}
+.project-card img {
+	width: 100%;
+	border-radius: 10px;
+	height: 250px;
+	object-fit: cover;
+}
+.project-title {
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 10px;
+	padding-bottom: 5px;
+	border-top: 2px solid #a1c349;
+	border-bottom: 2px solid #a1c349;
+	display: inline-block;
+}
+.project-btn{
+	background-color: #a1c349;
+	height: 46px;
+	padding: 11px 30px;
+	font-size: 15px;
+	line-height: 20px;
+	border:none;
+	margin-top: 35px;
+}
+
+
+/* call whatsapp */
+
+.contact-icons {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	z-index: 100;
+	animation: wiggle .3s infinite alternate;
+}
+
+@keyframes wiggle {
+	0% {
+	transform: scale(1.1);
+}
+100% {
+	transform: scale(1);
+}
+}@keyframes wiggles {
+	0% {
+	transform: scale(1);
+}
+100% {
+	transform: scale(1.2);
+}
+}
+
+.contact-icons a {
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #25d366;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	
+}
+.contact-icons i {
+  font-size: 30px;
+}
+
+.call-btn,
+.whatsapp-btn {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	left: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+	box-shadow: 0px 1px 2px 1px rgb(43 46 74 / 30%);
+	z-index: 10;
+}
+
+.call-btn {
+	background: #146c44;
+	bottom: 7rem;
+	color: #fff;
+	text-decoration: none;
+}
+
+.whatsapp-btn {
+	background: #146c44;
+	bottom: 2rem;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+	background: #25D366;
+	color: #fff;
+
+	text-decoration: none;
+}
+
+
+.call-btn :after {
+	z-index: -1;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+}
+
+/* video */
+
+.video-card {
+	overflow: hidden;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.video-card img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.play-btn img {
+	width: 50px;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	position: relative;
+}
+.section-title::after {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 3px;
+	background-color: green;
+	margin: 5px auto 0;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+  border-radius: 8px; 
+  transition: transform 0.3s; /* Smooth hover effect */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+}
+
+.responsive-image:hover {
+  transform: scale(1.05); /* Slight zoom-in on hover */
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/*  testimonial section*/
+.testimonial-section {
+	text-align: center;
+	padding: 70px 0;
+	height: auto;
+	background: #e7edf5;
+}
+.testimonial-card {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 40px 0;
+}
+.testimonial-logo {
+	border-radius: 50%;
+	object-fit: contain;
+}
+.testimonial-name {
+	font-size: 20px;
+	font-weight: bold;
+	color: green;
+	padding-top: 10px;
+}
+.testimonial-stars {
+	color: gold;
+	font-size: 18px;
+}
+.testimonial-text {
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+.carousel-indicators button {
+	background-color: green !important;
+	border-radius: 50%;
+	margin-top: -40px;
+
+}
+
+
+/* contact */
+.contact-container {
+	max-width: 900px;
+	margin: 30px auto;
+	background: #fff;
+	border-radius: 10px;
+	padding: 40px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+	font-weight: bold;
+}
+.contact-info p {
+	color: black;
+}
+.contact-info i {
+	font-size: 18px;
+	margin-right: 10px;
+	color: #000;
+}
+.contact-form {
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+.contact-form h3 {
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	font-style: italic;
+	border-bottom: 4px solid green;
+	padding-bottom: 10px;
+	/* display: inline-block; */
+}
+.form-control {
+	border: none;
+	border-bottom: 2px solid #ddd;
+	border-radius: 0;
+	padding: 10px;
+}
+.form-control:focus {
+	border-color: green;
+	box-shadow: none;
+}
+.btn-custom {
+	float: right;
+	width: 50%;
+	padding: 10px;
+	border: 2px solid black;
+	background: none;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.btn-custom:hover {
+	background: black;
+	color: white;
+}
+
+
+
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 30px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 30px);
+  right: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+
+.owl-dots {
+  text-align: center;
+}
+
+
+
+.owl-carousel img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* footer */
+.footer {
+	margin-top: 30px;
+	background: #f0f0f0;
+	padding: 40px 0;
+	font-size: 14px;
+}
+.footer h5 {
+	font-weight: bold;
+}
+.footer p, .footer a {
+	color: #6c757d;
+	text-decoration: none;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+.social-icons a {
+	font-size: 18px;
+	margin: 0 8px;
+	color: black;
+	transition: 0.3s;
+}
+.social-icons a:hover {
+	color: green;
+}
+.floating-buttons {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.floating-buttons img {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.floating-buttons img:hover {
+	transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+	.logo{
+		position: absolute;
+		top: 20px;
+		left: 16px;
+		width: 100%;
+		height: 46px;
+		text-align: center;
+		padding: 10px 0 0 0;
+		float: none
+	}
+}
+@media(max-width:768px){
+
+	.carousel-caption.d-md-block.new10 h2 {
+		font-size:25px;
+		letter-spacing: 0.2px
+	}
+	.video-card{
+		padding-top: 15px;
+	}
+	.btn-custom {
+		padding: 8px;
+		border: 2px solid rgb(121, 120, 120);
+		font-weight: bold;
+		transition: 0.3s;
+		font-size: 10px;
+	}
+
+}
