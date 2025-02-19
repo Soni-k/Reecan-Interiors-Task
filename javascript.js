@@ -15,8 +15,8 @@ $(document).ready(function () {
       600: { items: 2 }, // 2 items for medium screens
       1000: { items: 3 }, // 3 items for large screens
       1200: { items: 4 }, // 4 items for extra-large screens
-      1400: { items: 5 }, // 4 items for extra-large screens
-      1600: { items: 6 }, // 4 items for extra-large screens
+      1400: { items: 5 },
+      1600: { items: 6 },
     },
   });
 });

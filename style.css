@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 }
 
-
+/* navbar */
 .navbar {
 	background-color: black;
 	padding: 27px 20px;
@@ -115,7 +115,6 @@ li  a:hover{
 	border:none;
 	margin-top: 35px;
 }
-
 
 
 /* call whatsapp */
@@ -331,7 +330,6 @@ li  a:hover{
 	font-style: italic;
 	border-bottom: 4px solid green;
 	padding-bottom: 10px;
-	/* display: inline-block; */
 }
 .form-control {
 	border: none;
